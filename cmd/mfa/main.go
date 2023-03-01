@@ -17,7 +17,7 @@ var (
 	addCommand    = kingpin.Command("add", "add an mfa")
 	addName       = addCommand.Arg("name", "name of mfa").Required().String()
 	addUrl        = addCommand.Arg("url", "url of totp").Required().String()
-	listCommand   = kingpin.Command("list", "show all keys")
+	listCommand   = kingpin.Command("list", "list all stored keys")
 	exportCommand = kingpin.Command("export", "export all keys as JSON")
 	importCommand = kingpin.Command("import", "import all keys as JSON")
 )
